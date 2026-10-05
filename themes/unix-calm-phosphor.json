@@ -1,0 +1,33 @@
+{
+ "name": "Unix · спокойный фосфор (по Everforest)",
+ "dark": true,
+ "font": "f/terminus.ttf",
+ "font_scope": "all",
+ "font_scale": 1.3333,
+ "colors": {
+  "background": "#1e2326",
+  "foreground": "#b8c8b0",
+  "card": "#232a2e",
+  "muted": "#293134",
+  "accent": "#293134",
+  "muted-2": "#30393d",
+  "muted-foreground": "#97a598",
+  "border": "#374145",
+  "input": "#505b5a",
+  "primary": "#83c092",
+  "primary-foreground": "#1e2326",
+  "ring": "#83c092",
+  "destructive": "#e67e80",
+  "warning": "#c6e3b4",
+  "success": "#a7c080",
+  "code": "#a7c080",
+  "hl-attr": "#d3c6aa"
+ },
+ "avatars": {
+  "🧑‍💻": "a/ascii-hubdev-phosphor.png",
+  "🧪": "a/ascii-agentdev-phosphor.png",
+  "🛠️": "a/ascii-devops-phosphor.png",
+  "🚨": "a/ascii-sre-phosphor.png",
+  "🎨": "a/ascii-designer-phosphor.png"
+ }
+}

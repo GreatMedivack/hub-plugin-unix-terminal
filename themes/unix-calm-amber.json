@@ -1,0 +1,33 @@
+{
+ "name": "Unix · спокойный янтарь (по Gruvbox)",
+ "dark": true,
+ "font": "f/terminus.ttf",
+ "font_scope": "all",
+ "font_scale": 1.3333,
+ "colors": {
+  "background": "#1d2021",
+  "foreground": "#d5c4a1",
+  "card": "#232526",
+  "muted": "#2a2928",
+  "accent": "#2a2928",
+  "muted-2": "#32302f",
+  "muted-foreground": "#a89984",
+  "border": "#3c3836",
+  "input": "#5a524c",
+  "primary": "#d8a657",
+  "primary-foreground": "#1d2021",
+  "ring": "#d8a657",
+  "destructive": "#ea6962",
+  "warning": "#e3b866",
+  "success": "#a9b665",
+  "code": "#89b482",
+  "hl-attr": "#ebdbb2"
+ },
+ "avatars": {
+  "🧑‍💻": "a/ascii-hubdev-amber.png",
+  "🧪": "a/ascii-agentdev-amber.png",
+  "🛠️": "a/ascii-devops-amber.png",
+  "🚨": "a/ascii-sre-amber.png",
+  "🎨": "a/ascii-designer-amber.png"
+ }
+}
