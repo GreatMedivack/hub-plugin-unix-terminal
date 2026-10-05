@@ -35,5 +35,18 @@
   "clock": "i/clock-amber.png",
   "flow": "i/flow-amber.png",
   "search": "i/search-amber.png"
+ },
+ "icons_text": {
+  "account": "☺",
+  "clock": "↻",
+  "flow": "├",
+  "search": "/"
+ },
+ "avatars_text": {
+  "🧑‍💻": ">_",
+  "🧪": "@",
+  "🛠️": "#",
+  "🚨": "!!",
+  "🎨": "*"
  }
 }

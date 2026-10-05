@@ -35,5 +35,18 @@
   "clock": "i/clock-phosphor.png",
   "flow": "i/flow-phosphor.png",
   "search": "i/search-phosphor.png"
+ },
+ "icons_text": {
+  "account": "☺",
+  "clock": "↻",
+  "flow": "├",
+  "search": "/"
+ },
+ "avatars_text": {
+  "🧑‍💻": ">_",
+  "🧪": "@",
+  "🛠️": "#",
+  "🚨": "!!",
+  "🎨": "*"
  }
 }
