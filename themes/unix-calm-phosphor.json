@@ -28,25 +28,13 @@
   "🧪": "a/ascii-agentdev-phosphor.png",
   "🛠️": "a/ascii-devops-phosphor.png",
   "🚨": "a/ascii-sre-phosphor.png",
-  "🎨": "a/ascii-designer-phosphor.png"
+  "🎨": "a/ascii-designer-phosphor.png",
+  "👨‍💻": "a/ascii-dev-phosphor.png"
  },
  "icons": {
-  "account": "i/account-phosphor.png",
   "clock": "i/clock-phosphor.png",
   "flow": "i/flow-phosphor.png",
-  "search": "i/search-phosphor.png"
- },
- "icons_text": {
-  "account": "☺",
-  "clock": "↻",
-  "flow": "├",
-  "search": "/"
- },
- "avatars_text": {
-  "🧑‍💻": ">_",
-  "🧪": "@",
-  "🛠️": "#",
-  "🚨": "!!",
-  "🎨": "*"
+  "search": "i/search-phosphor.png",
+  "account": "i/account-phosphor.png"
  }
 }

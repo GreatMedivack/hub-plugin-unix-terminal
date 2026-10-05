@@ -28,25 +28,13 @@
   "🧪": "a/ascii-agentdev-amber.png",
   "🛠️": "a/ascii-devops-amber.png",
   "🚨": "a/ascii-sre-amber.png",
-  "🎨": "a/ascii-designer-amber.png"
+  "🎨": "a/ascii-designer-amber.png",
+  "👨‍💻": "a/ascii-dev-amber.png"
  },
  "icons": {
-  "account": "i/account-amber.png",
   "clock": "i/clock-amber.png",
   "flow": "i/flow-amber.png",
-  "search": "i/search-amber.png"
- },
- "icons_text": {
-  "account": "☺",
-  "clock": "↻",
-  "flow": "├",
-  "search": "/"
- },
- "avatars_text": {
-  "🧑‍💻": ">_",
-  "🧪": "@",
-  "🛠️": "#",
-  "🚨": "!!",
-  "🎨": "*"
+  "search": "i/search-amber.png",
+  "account": "i/account-amber.png"
  }
 }
