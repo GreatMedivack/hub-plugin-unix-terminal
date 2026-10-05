@@ -29,5 +29,11 @@
   "🛠️": "a/ascii-devops-phosphor.png",
   "🚨": "a/ascii-sre-phosphor.png",
   "🎨": "a/ascii-designer-phosphor.png"
+ },
+ "icons": {
+  "account": "i/account-phosphor.png",
+  "clock": "i/clock-phosphor.png",
+  "flow": "i/flow-phosphor.png",
+  "search": "i/search-phosphor.png"
  }
 }
