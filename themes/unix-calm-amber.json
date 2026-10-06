@@ -17,10 +17,10 @@
   "primary": "#d8a657",
   "primary-foreground": "#1d2021",
   "ring": "#d8a657",
-  "destructive": "#ea6962",
+  "destructive": "#c98068",
   "warning": "#e3b866",
   "success": "#a9b665",
-  "code": "#89b482",
+  "code": "#dd9f68",
   "hl-attr": "#ebdbb2"
  },
  "avatars": {
