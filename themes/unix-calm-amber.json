@@ -3,7 +3,7 @@
  "dark": true,
  "font": "f/hub-term-emoji.ttf",
  "font_scope": "all",
- "font_scale": 1.3333,
+ "font_scale": 1.125,
  "colors": {
   "background": "#1d2021",
   "foreground": "#d5c4a1",
