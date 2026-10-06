@@ -26,3 +26,14 @@
 :root.unix-theme .who:not(.quiet) { --who: var(--primary); --who-soft: color-mix(in oklab, var(--primary) 14%, var(--background)); }
 /* значки пунктов меню (Расписание, Поток, виды плагинов) — цветом символов агентов */
 :root.unix-theme .srow.nav .glyph { color: var(--primary); }
+/* карточка вопроса и полоса «Ждёт вас» над полем ввода — тем же спокойным цветом внимания, а не цветом ошибки:
+   редкий квадратный пунктир по фону карточки */
+:root.unix-theme .card { --dash: color-mix(in srgb, var(--calm-attn) 70%, var(--border)); border: 0; border-radius: 0;
+  background:
+    repeating-linear-gradient(90deg, var(--dash) 0 8px, transparent 8px 11px) top / 100% 1px no-repeat,
+    repeating-linear-gradient(90deg, var(--dash) 0 8px, transparent 8px 11px) bottom / 100% 1px no-repeat,
+    repeating-linear-gradient(180deg, var(--dash) 0 8px, transparent 8px 11px) left / 1px 100% no-repeat,
+    repeating-linear-gradient(180deg, var(--dash) 0 8px, transparent 8px 11px) right / 1px 100% no-repeat,
+    var(--card); }
+:root.unix-theme .strip-row[data-k="wait"] .k { color: var(--calm-attn); }
+:root.unix-theme .strip-row[data-k="wait"] { box-shadow: inset 2px 0 0 var(--calm-attn); }
