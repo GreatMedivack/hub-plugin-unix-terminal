@@ -37,3 +37,6 @@
     var(--card); }
 :root.unix-theme .strip-row[data-k="wait"] .k { color: var(--calm-attn); }
 :root.unix-theme .strip-row[data-k="wait"] { box-shadow: inset 2px 0 0 var(--calm-attn); }
+/* шире, как в терминале: лента и поле ввода до 1200px, строка текста до 110 знаков (было 800px и 68 знаков) */
+:root.unix-theme .feed-inner, :root.unix-theme .dock-inner { max-width: 1200px; }
+:root.unix-theme { --measure: 110ch; }
