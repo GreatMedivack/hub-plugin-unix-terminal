@@ -1,0 +1,2 @@
+/* запасной значок unix-тем: буква в клетке значка, шрифт и цвет акцента темы */
+.avatar.ux-fallback { display: inline-block; width: 1.15em; text-align: center; font-family: var(--font); color: var(--primary); }
