@@ -1,17 +1,17 @@
-/* Только при теме со шрифтом на всю страницу (font_scope: all — терминальные темы): хаб ставит на <html> класс
-   theme-font-all. Системная и другие темы не меняются. */
+/* Только при активной unix-теме: класс unix-theme на <html> ставит web/main.js.
+   «Системная» и другие темы не меняются. */
 /* «ждёт вас»: прямая полоса у строки сессии, без скругления */
-:root.theme-font-all .srow.blocked, :root.theme-font-all .srow.blocked[aria-current="true"] { box-shadow: none; position: relative; }
-:root.theme-font-all .srow.blocked[aria-current="true"] { box-shadow: var(--shadow-plate); }
-:root.theme-font-all .srow.blocked::before { content: ""; position: absolute; left: 0; top: 4px; bottom: 4px; width: 2px; background: var(--calm-attn); }
-:root.theme-font-all .srow.blocked .glyph { color: var(--calm-attn); }
+:root.unix-theme .srow.blocked, :root.unix-theme .srow.blocked[aria-current="true"] { box-shadow: none; position: relative; }
+:root.unix-theme .srow.blocked[aria-current="true"] { box-shadow: var(--shadow-plate); }
+:root.unix-theme .srow.blocked::before { content: ""; position: absolute; left: 0; top: 4px; bottom: 4px; width: 2px; background: var(--calm-attn); }
+:root.unix-theme .srow.blocked .glyph { color: var(--calm-attn); }
 /* метка «ждёт вас» и пилюля «Ждут вас · N» — контуром цвета темы */
-:root.theme-font-all .srow .tag:not(.soft):not(.dismiss) { color: var(--calm-attn); box-shadow: none; }
-:root.theme-font-all .wpill.alarm, :root.theme-font-all .wpill.review { color: var(--calm-attn); box-shadow: none; }  /* «К просмотру» — так же */
+:root.unix-theme .srow .tag:not(.soft):not(.dismiss) { color: var(--calm-attn); box-shadow: none; }
+:root.unix-theme .wpill.alarm, :root.unix-theme .wpill.review { color: var(--calm-attn); box-shadow: none; }  /* «К просмотру» — так же */
 /* приглушённый цвет внимания: оттенок символов агентов (--primary), смягчённый к вторичному тексту */
-:root.theme-font-all { --calm-attn: color-mix(in oklab, var(--primary) 60%, var(--muted-foreground)); }
+:root.unix-theme { --calm-attn: color-mix(in oklab, var(--primary) 60%, var(--muted-foreground)); }
 /* «ждёт вас», «Ждут вас · N», «ответ?» — тонкий квадратный пунктир, как у свёрнутых сообщений ленты */
-:root.theme-font-all .srow .tag, :root.theme-font-all .wpill.alarm, :root.theme-font-all .wpill.review {
+:root.unix-theme .srow .tag, :root.unix-theme .wpill.alarm, :root.unix-theme .wpill.review {
   --dash: var(--calm-attn); border: 0; border-radius: 0; font-weight: 400;
   /* редкий пунктир псевдографикой: штрих 8px, разрыв 3px — рисуется градиентами по четырём сторонам */
   background:
@@ -19,10 +19,10 @@
     repeating-linear-gradient(90deg, var(--dash) 0 8px, transparent 8px 11px) bottom / 100% 1px no-repeat,
     repeating-linear-gradient(180deg, var(--dash) 0 8px, transparent 8px 11px) left / 1px 100% no-repeat,
     repeating-linear-gradient(180deg, var(--dash) 0 8px, transparent 8px 11px) right / 1px 100% no-repeat; }
-:root.theme-font-all .srow .tag.soft { --dash: color-mix(in srgb, var(--calm-attn) 45%, var(--border)); }
-:root.theme-font-all .wpill.alarm:hover, :root.theme-font-all .wpill.review:hover { background-color: color-mix(in oklch, var(--calm-attn) 12%, transparent); }
-:root.theme-font-all .aside-foot .counts [data-s="wait"]::before { background: var(--calm-attn); }
+:root.unix-theme .srow .tag.soft { --dash: color-mix(in srgb, var(--calm-attn) 45%, var(--border)); }
+:root.unix-theme .wpill.alarm:hover, :root.unix-theme .wpill.review:hover { background-color: color-mix(in oklch, var(--calm-attn) 12%, transparent); }
+:root.unix-theme .aside-foot .counts [data-s="wait"]::before { background: var(--calm-attn); }
 /* участники ленты — цветом темы, а не оттенком по имени (служебные .quiet — своим правилом) */
-:root.theme-font-all .who:not(.quiet) { --who: var(--primary); --who-soft: color-mix(in oklab, var(--primary) 14%, var(--background)); }
+:root.unix-theme .who:not(.quiet) { --who: var(--primary); --who-soft: color-mix(in oklab, var(--primary) 14%, var(--background)); }
 /* значки пунктов меню (Расписание, Поток, виды плагинов) — цветом символов агентов */
-:root.theme-font-all .srow.nav .glyph { color: var(--primary); }
+:root.unix-theme .srow.nav .glyph { color: var(--primary); }
