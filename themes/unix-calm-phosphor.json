@@ -1,7 +1,7 @@
 {
  "name": "Unix · спокойный фосфор (по Everforest)",
  "dark": true,
- "font": "f/terminus.ttf",
+ "font": "f/hub-term-emoji.ttf",
  "font_scope": "all",
  "font_scale": 1.3333,
  "colors": {
