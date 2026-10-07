@@ -56,3 +56,7 @@
 :root.unix-theme .account { border-radius: 50%; }
 :root.unix-theme :is(.chip, .kbd-hint, .row.older .btn, .pj-next, .pj-todos) { border-color: transparent !important; }
 :root.unix-theme :is(.pj-next, .pj-todos) { background: transparent; padding-inline: 0; }
+/* выделение в своих сообщениях (плашка справа): у хаба ::selection и фон плашки — один цвет (--front-soft), выделенное
+   не видно, и следующая протяжка тащит его как картинку. Здесь — заметно ярче фона плашки */
+:root.unix-theme .row.mine .b::selection, :root.unix-theme .row.mine .b ::selection {
+  background: color-mix(in oklab, var(--primary) 45%, var(--background)); color: var(--foreground); }
