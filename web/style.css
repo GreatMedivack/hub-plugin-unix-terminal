@@ -34,3 +34,10 @@
 /* шире, как в терминале: лента и поле ввода до 1200px, строка текста до 110 знаков (было 800px и 68 знаков) */
 :root.unix-theme .feed-inner, :root.unix-theme .dock-inner { max-width: 1200px; }
 :root.unix-theme { --measure: 110ch; }
+/* каретка как в терминале: блок цветом темы, мигает 1 раз в секунду (caret-shape и caret-animation, Chrome 13x+;
+   где их нет — обычная тонкая каретка цветом темы). При «меньше анимации» в системе блок не мигает. */
+:root.unix-theme textarea, :root.unix-theme input[type="text"], :root.unix-theme input[type="search"], :root.unix-theme input:not([type]) {
+  caret-color: var(--primary); caret-shape: block; caret-animation: manual; animation: unix-caret 1s steps(1, end) infinite; }
+@keyframes unix-caret { 50% { caret-color: transparent; } }
+@media (prefers-reduced-motion: reduce) {
+  :root.unix-theme textarea, :root.unix-theme input[type="text"], :root.unix-theme input[type="search"], :root.unix-theme input:not([type]) { animation: none; } }
