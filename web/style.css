@@ -43,3 +43,16 @@
   :root.unix-theme textarea, :root.unix-theme input[type="text"], :root.unix-theme input[type="search"], :root.unix-theme input:not([type]) { animation: none; } }
 /* галочки, переключатели, ползунки — цветом темы, а не синим браузера */
 :root.unix-theme { accent-color: var(--primary); }
+/* Плоский каркас — из плагина flat (github.com/flagman/hub-plugin-flat, MIT, Copyright (c) 2026 flagman),
+   только при unix-теме: колонки до краёв окна, прямые углы, между колонками — тонкая линия цвета рамок;
+   внутри мелкие скругления, лишние обводки убраны. Плашки внимания остаются своими (инверсия, правила выше). */
+:root.unix-theme .app { padding: 0; column-gap: 0; }
+:root.unix-theme .app.left-folded { padding-left: 0; }
+:root.unix-theme main, :root.unix-theme .side { border-radius: 0; box-shadow: none; }
+:root.unix-theme main, :root.unix-theme .side { border-left: 1px solid var(--border); }
+:root.unix-theme { --radius: 4px; --radius-xs: 3px; --radius-sm: 3px; --radius-lg: 6px; --radius-xl: 8px; --radius-pill: 3px; }
+:root.unix-theme .composer { border-radius: 6px; box-shadow: none; }
+:root.unix-theme :is(.chip, .pill, .srow .count, .gcount, .row.older .btn, .kbd-hint) { border-radius: 3px; }
+:root.unix-theme .account { border-radius: 50%; }
+:root.unix-theme :is(.chip, .kbd-hint, .row.older .btn, .pj-next, .pj-todos) { border-color: transparent !important; }
+:root.unix-theme :is(.pj-next, .pj-todos) { background: transparent; padding-inline: 0; }
