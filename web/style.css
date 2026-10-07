@@ -6,21 +6,15 @@
 :root.unix-theme .srow.blocked::before { content: ""; position: absolute; left: 0; top: 4px; bottom: 4px; width: 2px; background: var(--calm-attn); }
 :root.unix-theme .srow.blocked .glyph { color: var(--calm-attn); }
 /* метка «ждёт вас» и пилюля «Ждут вас · N» — контуром цвета темы */
-:root.unix-theme .srow .tag:not(.soft):not(.dismiss) { color: var(--calm-attn); box-shadow: none; }
-:root.unix-theme .wpill.alarm, :root.unix-theme .wpill.review { color: var(--calm-attn); box-shadow: none; }  /* «К просмотру» — так же */
+  /* «К просмотру» — так же */
 /* приглушённый цвет внимания: оттенок символов агентов (--primary), смягчённый к вторичному тексту */
 :root.unix-theme { --calm-attn: color-mix(in oklab, var(--primary) 60%, var(--muted-foreground)); }
 /* «ждёт вас», «Ждут вас · N», «ответ?» — тонкий квадратный пунктир, как у свёрнутых сообщений ленты */
 :root.unix-theme .srow .tag, :root.unix-theme .wpill.alarm, :root.unix-theme .wpill.review {
-  --dash: var(--calm-attn); border: 0; border-radius: 0; font-weight: 400;
-  /* редкий пунктир псевдографикой: штрих 8px, разрыв 3px — рисуется градиентами по четырём сторонам */
-  background:
-    repeating-linear-gradient(90deg, var(--dash) 0 8px, transparent 8px 11px) top / 100% 1px no-repeat,
-    repeating-linear-gradient(90deg, var(--dash) 0 8px, transparent 8px 11px) bottom / 100% 1px no-repeat,
-    repeating-linear-gradient(180deg, var(--dash) 0 8px, transparent 8px 11px) left / 1px 100% no-repeat,
-    repeating-linear-gradient(180deg, var(--dash) 0 8px, transparent 8px 11px) right / 1px 100% no-repeat; }
-:root.unix-theme .srow .tag.soft { --dash: color-mix(in srgb, var(--calm-attn) 45%, var(--border)); }
-:root.unix-theme .wpill.alarm:hover, :root.unix-theme .wpill.review:hover { background-color: color-mix(in oklch, var(--calm-attn) 12%, transparent); }
+  /* инверсия, как статусная строка VT220: блок цвета внимания, текст цветом фона, без рамки и скруглений */
+  background: var(--calm-attn); color: var(--background); border: 0; border-radius: 0; box-shadow: none; font-weight: 400; }
+:root.unix-theme .srow .tag.soft { background: color-mix(in srgb, var(--calm-attn) 70%, var(--background)); }
+:root.unix-theme .wpill.alarm:hover, :root.unix-theme .wpill.review:hover { background: color-mix(in oklab, var(--calm-attn) 85%, var(--foreground)); }
 :root.unix-theme .aside-foot .counts [data-s="wait"]::before { background: var(--calm-attn); }
 /* участники ленты — цветом темы, а не оттенком по имени (служебные .quiet — своим правилом) */
 :root.unix-theme .who:not(.quiet) { --who: var(--primary); --who-soft: color-mix(in oklab, var(--primary) 14%, var(--background)); }
