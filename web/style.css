@@ -41,3 +41,5 @@
 @keyframes unix-caret { 50% { caret-color: transparent; } }
 @media (prefers-reduced-motion: reduce) {
   :root.unix-theme textarea, :root.unix-theme input[type="text"], :root.unix-theme input[type="search"], :root.unix-theme input:not([type]) { animation: none; } }
+/* галочки, переключатели, ползунки — цветом темы, а не синим браузера */
+:root.unix-theme { accent-color: var(--primary); }
