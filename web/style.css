@@ -29,6 +29,13 @@
     repeating-linear-gradient(180deg, var(--dash) 0 8px, transparent 8px 11px) left / 1px 100% no-repeat,
     repeating-linear-gradient(180deg, var(--dash) 0 8px, transparent 8px 11px) right / 1px 100% no-repeat,
     var(--card); }
+:root.unix-theme { --attention: var(--calm-attn); --attention-line: color-mix(in srgb, var(--calm-attn) 70%, var(--border)); }
+/* шапка карточек «сессия ждёт вас» (ядро 09.10: полоса --attention) — инверсией, как метки «ждёт вас» и статусная
+   строка VT220: блок цвета внимания, текст и × цветом фона */
+:root.unix-theme .card .card-head { background: var(--calm-attn); color: var(--background); }
+:root.unix-theme .card .card-head h3 { font-weight: 400; }
+:root.unix-theme .card-x { color: var(--background); border-radius: 0; }
+:root.unix-theme .card-x:hover { background: color-mix(in srgb, var(--background) 20%, transparent); color: var(--background); }
 :root.unix-theme .strip-row[data-k="wait"] .k { color: var(--calm-attn); }
 :root.unix-theme .strip-row[data-k="wait"] { box-shadow: inset 2px 0 0 var(--calm-attn); }
 /* шире, как в терминале: лента и поле ввода до 1200px, строка текста до 110 знаков (было 800px и 68 знаков) */
