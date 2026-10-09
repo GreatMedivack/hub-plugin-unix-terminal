@@ -60,3 +60,7 @@
    не видно, и следующая протяжка тащит его как картинку. Здесь — заметно ярче фона плашки */
 :root.unix-theme .row.mine .b::selection, :root.unix-theme .row.mine .b ::selection {
   background: color-mix(in oklab, var(--primary) 45%, var(--background)); color: var(--foreground); }
+/* эмодзи без своей картинки в теме — символ из шрифта темы (data/emoji-map.json в hub-themes, d60086): цветом акцента,
+   как картинки-значки, и в размере, где пиксель знака — ровно пиксель экрана (шрифт 16px с font_scale 1.125) */
+:root.unix-theme .srow .avatar:not(.kit-img), :root.unix-theme .byline .av.emoji:not(.kit-img) {
+  color: var(--primary); font-size: calc(16px / 1.125); }
