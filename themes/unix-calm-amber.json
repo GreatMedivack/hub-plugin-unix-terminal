@@ -207,7 +207,9 @@
   "🎨️": "a/ascii-designer-amber.png",
   "🎖": "a/ascii-adjutant-amber.png",
   "🎙️": "a/x-1f399-amber.png",
-  "🎙": "a/x-1f399-amber.png"
+  "🎙": "a/x-1f399-amber.png",
+  "👀": "a/p-1f440-amber.png",
+  "👍": "a/p-1f44d-amber.png"
  },
  "icons": {
   "clock": "i/clock-amber.png",

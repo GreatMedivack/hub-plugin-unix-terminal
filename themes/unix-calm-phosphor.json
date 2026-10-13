@@ -207,7 +207,9 @@
   "🎨️": "a/ascii-designer-phosphor.png",
   "🎖": "a/ascii-adjutant-phosphor.png",
   "🎙️": "a/x-1f399-phosphor.png",
-  "🎙": "a/x-1f399-phosphor.png"
+  "🎙": "a/x-1f399-phosphor.png",
+  "👀": "a/p-1f440-phosphor.png",
+  "👍": "a/p-1f44d-phosphor.png"
  },
  "icons": {
   "clock": "i/clock-phosphor.png",
