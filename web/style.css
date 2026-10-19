@@ -71,3 +71,24 @@
    как картинки-значки, и в размере, где пиксель знака — ровно пиксель экрана (шрифт 16px с font_scale 1.125) */
 :root.unix-theme .srow .avatar:not(.kit-img), :root.unix-theme .byline .av.emoji:not(.kit-img) {
   color: var(--primary); font-size: calc(16px / 1.125); }
+/* новые элементы хаба (18.10: ряд поиска с ☰, «Все | Сейчас», меню разделов, группы и палитра значков, меню модели и
+   исполнителей) — в общем плоском виде темы: без теней, тонкая рамка цвета рамок, мелкие углы */
+:root.unix-theme aside { --row-plate: var(--muted); --row-plate-shadow: 0 0 0 1px var(--border); }
+:root.unix-theme :is(.menu, .nav-pop, .gpop) { box-shadow: none; border: 1px solid var(--input); background: var(--card); }
+:root.unix-theme .nav-pop { top: calc(var(--ctl-h) + var(--space-3) + var(--space-1)); }
+/* «Все · N | Сейчас · M» — как «Кратко | Подробно» в шапке: рамка вокруг, выбранная вкладка — заливкой, без плашки с тенью */
+:root.unix-theme .active-bar { background: transparent; box-shadow: inset 0 0 0 1px var(--border); padding: 0; gap: 0; }
+:root.unix-theme .active-bar button { border-radius: 0; }
+:root.unix-theme .active-bar button:first-child { border-radius: var(--radius) 0 0 var(--radius); }
+:root.unix-theme .active-bar button:last-child { border-radius: 0 var(--radius) var(--radius) 0; }
+:root.unix-theme .active-bar button[aria-pressed="true"] { background: var(--muted-2); box-shadow: none; font-weight: 400; }
+/* палитра значков сессии: знаки темы — цветом акцента и в родном размере пикселя, как значки в списке; выбранный — рамкой */
+:root.unix-theme .pal-e { font-size: calc(16px / 1.125); color: var(--primary); border-radius: var(--radius-sm); }
+:root.unix-theme .pal-e.on { box-shadow: inset 0 0 0 1px var(--primary); }
+:root.unix-theme .pal-own input { box-shadow: none; border: 1px solid var(--border); background: var(--background); }
+:root.unix-theme .gt-edit { border-radius: var(--radius-sm); }
+:root.unix-theme .drag-ghost { transform: none; box-shadow: none; outline: 1px solid var(--input); }
+:root.unix-theme .g-empty { border-radius: 0; }
+/* карточка, с которой сняли вопрос («заморожена»), — без цвета внимания, как у хаба: правило шапки выше иначе перебивает */
+:root.unix-theme .card.frozen { --dash: var(--border); }
+:root.unix-theme .card.frozen .card-head { background: var(--muted); color: var(--muted-foreground); }
