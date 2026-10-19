@@ -184,8 +184,8 @@
   "📂️": "a/x-1f4c2-phosphor.png",
   "🏠️": "a/x-1f3e0-phosphor.png",
   "🏠": "a/x-1f3e0-phosphor.png",
-  "✅": "a/x-2705-phosphor.png",
-  "✅️": "a/x-2705-phosphor.png",
+  "✅": "a/p-2705-phosphor.png",
+  "✅️": "a/p-2705-phosphor.png",
   "✔": "a/x-2714-phosphor.png",
   "✔️": "a/x-2714-phosphor.png",
   "❓": "a/x-2753-phosphor.png",
@@ -209,7 +209,11 @@
   "🎙️": "a/x-1f399-phosphor.png",
   "🎙": "a/x-1f399-phosphor.png",
   "👀": "a/p-1f440-phosphor.png",
-  "👍": "a/p-1f44d-phosphor.png"
+  "👍": "a/p-1f44d-phosphor.png",
+  "❤": "a/p-2764-phosphor.png",
+  "❤️": "a/p-2764-phosphor.png",
+  "🙏": "a/p-1f64f-phosphor.png",
+  "🙏️": "a/p-1f64f-phosphor.png"
  },
  "icons": {
   "clock": "i/clock-phosphor.png",

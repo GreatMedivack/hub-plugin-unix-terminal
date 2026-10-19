@@ -184,8 +184,8 @@
   "📂️": "a/x-1f4c2-amber.png",
   "🏠️": "a/x-1f3e0-amber.png",
   "🏠": "a/x-1f3e0-amber.png",
-  "✅": "a/x-2705-amber.png",
-  "✅️": "a/x-2705-amber.png",
+  "✅": "a/p-2705-amber.png",
+  "✅️": "a/p-2705-amber.png",
   "✔": "a/x-2714-amber.png",
   "✔️": "a/x-2714-amber.png",
   "❓": "a/x-2753-amber.png",
@@ -209,7 +209,11 @@
   "🎙️": "a/x-1f399-amber.png",
   "🎙": "a/x-1f399-amber.png",
   "👀": "a/p-1f440-amber.png",
-  "👍": "a/p-1f44d-amber.png"
+  "👍": "a/p-1f44d-amber.png",
+  "❤": "a/p-2764-amber.png",
+  "❤️": "a/p-2764-amber.png",
+  "🙏": "a/p-1f64f-amber.png",
+  "🙏️": "a/p-1f64f-amber.png"
  },
  "icons": {
   "clock": "i/clock-amber.png",
