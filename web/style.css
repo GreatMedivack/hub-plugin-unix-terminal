@@ -92,3 +92,12 @@
 /* карточка, с которой сняли вопрос («заморожена»), — без цвета внимания, как у хаба: правило шапки выше иначе перебивает */
 :root.unix-theme .card.frozen { --dash: var(--border); }
 :root.unix-theme .card.frozen .card-head { background: var(--muted); color: var(--muted-foreground); }
+/* кнопка «отправить» — знак ↲ Terminus (им же в тексте рисуется 🏥, владелец 21.10) вместо самолётика: плоская, рамка 1px,
+   знак цветом акцента; наведение — инверсией, как плашки внимания. 32px — родной размер Terminus (font_scale 1.125) */
+:root.unix-theme .btn.round.send { background: transparent; color: var(--primary); border: 1px solid var(--input); border-radius: var(--radius);
+  transition: none; }
+:root.unix-theme .btn.round.send .icon { display: none; }
+:root.unix-theme .btn.round.send::before { content: "↲"; font: calc(32px / 1.125) / 1 "hub-theme-font", var(--font-mono); }
+:root.unix-theme .btn.round.send:hover { background: var(--primary); color: var(--background); border-color: var(--primary); }
+:root.unix-theme .btn.round.send:active { transform: none; }
+:root.unix-theme .btn.round.stop { border-radius: var(--radius); }
