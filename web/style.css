@@ -101,3 +101,26 @@
 :root.unix-theme .btn.round.send:hover { background: var(--primary); color: var(--background); border-color: var(--primary); }
 :root.unix-theme .btn.round.send:active { transform: none; }
 :root.unix-theme .btn.round.stop { border-radius: var(--radius); }
+/* стикеры «Запросы к хабу» (плагин hub-requests, 06.11): в плоском виде темы — без теней, рамка 1px, мелкие углы,
+   без анимации выдвижения. Готовый ответ — инверсией, как плашки внимания; в работе — приглушённо; давно в работе —
+   пунктиром. Текст — в родных размерах Terminus (16 и 14px при font_scale 1.125), без жирного */
+:root.unix-theme .hrq-card { border: 1px solid var(--input); border-radius: var(--radius); box-shadow: none; transition: none; }
+:root.unix-theme .hrq-card.hrq-new { border-color: var(--calm-attn); }
+:root.unix-theme .hrq-card.hrq-stale { border-style: dashed; border-color: var(--muted-foreground); }
+:root.unix-theme .hrq-mini { border: 0; border-left: 0; border-radius: 0; font: 400 calc(16px / 1.125) / 1 "hub-theme-font", var(--font-mono);
+  letter-spacing: 0; background: var(--card); color: var(--muted-foreground); transition: none; }
+:root.unix-theme .hrq-new .hrq-mini { background: var(--calm-attn); color: var(--background); }
+:root.unix-theme .hrq-rest > .hrq-mini { border: 1px solid var(--input); border-radius: var(--radius); box-shadow: none; }
+:root.unix-theme .hrq-body { font-size: calc(16px / 1.125); gap: 4px; }
+:root.unix-theme .hrq-body:hover { background: var(--muted); }
+:root.unix-theme .hrq-text { font-weight: 400; color: var(--foreground); }
+:root.unix-theme .hrq-meta { font-size: calc(14px / 1.125); }
+:root.unix-theme .hrq-chip { border-radius: 0; padding: 0 4px; background: var(--muted-2); color: var(--muted-foreground); }
+:root.unix-theme .hrq-new .hrq-chip { background: var(--calm-attn); color: var(--background); }
+:root.unix-theme .hrq-stale .hrq-chip { background: transparent; color: var(--muted-foreground); box-shadow: inset 0 0 0 1px var(--muted-foreground); }
+:root.unix-theme .hrq-x { border-radius: 0; font: 400 calc(16px / 1.125) / 1 "hub-theme-font", var(--font-mono); }
+:root.unix-theme .hrq-x:hover { background: var(--calm-attn); color: var(--background); }
+:root.unix-theme .hrq-flash { outline: 1px solid var(--calm-attn); outline-offset: 2px; border-radius: 0; }
+/* значок сессии на табе стикера — знак шрифта темы в родном размере, цветом акцента; у готового ответа — цветом фона (инверсия) */
+:root.unix-theme .hrq-av { font: 400 calc(16px / 1.125) / 1 "hub-theme-font", var(--font-mono); color: var(--primary); }
+:root.unix-theme .hrq-new .hrq-av { color: var(--background); }
