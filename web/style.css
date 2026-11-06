@@ -124,3 +124,6 @@
 /* значок сессии на табе стикера — знак шрифта темы в родном размере, цветом акцента; у готового ответа — цветом фона (инверсия) */
 :root.unix-theme .hrq-av { font: 400 calc(16px / 1.125) / 1 "hub-theme-font", var(--font-mono); color: var(--primary); }
 :root.unix-theme .hrq-new .hrq-av { color: var(--background); }
+/* раскрытый стикер выезжает левее столбца (hub-requests 0.4.2): таб на месте — плоский, рамкой карточки (цвет, пунктир) */
+:root.unix-theme .hrq-item:hover > .hrq-card > .hrq-mini, :root.unix-theme .hrq-card.hrq-on > .hrq-mini {
+  border: 1px solid; border-color: inherit; border-style: inherit; border-radius: var(--radius); box-shadow: none; }
