@@ -139,3 +139,7 @@
 :root.unix-theme .srow[aria-current="true"] .kit-img { filter: brightness(0); }
 /* «ждёт вас» у выбранной: полоса слева — цветом фона (цвет внимания на блоке цвета текста не читается) */
 :root.unix-theme .srow.blocked[aria-current="true"]::before { background: var(--background); }
+/* рамка фокуса (:focus-visible ядра — 2px с отступом) вокруг выбранной строки не нужна: выбор и так виден инверсией.
+   У остальных строк фокус с клавиатуры — тонкой рамкой по краю строки, без отступа и скруглений */
+:root.unix-theme .srow[aria-current="true"]:focus-visible { outline: 0; }
+:root.unix-theme .srow:not([aria-current="true"]):focus-visible { outline: 1px solid var(--foreground); outline-offset: -1px; border-radius: 0; }
