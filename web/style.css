@@ -127,10 +127,12 @@
 /* раскрытый стикер выезжает левее столбца (hub-requests 0.4.2): таб на месте — плоский, рамкой карточки (цвет, пунктир) */
 :root.unix-theme .hrq-item:hover > .hrq-card > .hrq-mini, :root.unix-theme .hrq-card.hrq-on > .hrq-mini {
   border: 1px solid; border-color: inherit; border-style: inherit; border-radius: var(--radius); box-shadow: none; }
-/* выбранная сессия в списке — инверсией, как курсор выбора в терминальном меню: блок цвета текста, всё внутри — цветом фона
+/* выбранная сессия в списке — инверсией, как курсор выбора в терминальном меню: блок цвета внимания темы, как счётчик «Ждут вас» и метки (владелец 10.11), всё внутри — цветом фона
    (владелец 09.11: вместо плашки с рамкой). Значки-картинки темы — тоже цветом фона (почти чёрным) */
 :root.unix-theme .srow[aria-current="true"], :root.unix-theme .srow.blocked[aria-current="true"] {
-  background: var(--foreground); color: var(--background); box-shadow: none; border-radius: 0; }
+  background: var(--calm-attn); color: var(--background); box-shadow: none; border-radius: 0; }
+/* метка «ждёт вас» в выбранной строке — обратной инверсией, иначе сливается с блоком того же цвета */
+:root.unix-theme .srow[aria-current="true"] .tag { background: var(--background); color: var(--calm-attn); }
 :root.unix-theme .srow[aria-current="true"] *:not(.tag, .tag *) { color: var(--background); }
 /* кнопка исполнителей «3 ▸» справа на строке — контуром цвета фона поверх блока */
 :root.unix-theme li:has(> .srow[aria-current="true"]) > .fork-toggle { background: transparent; color: var(--background);
