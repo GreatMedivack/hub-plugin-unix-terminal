@@ -127,21 +127,13 @@
 /* раскрытый стикер выезжает левее столбца (hub-requests 0.4.2): таб на месте — плоский, рамкой карточки (цвет, пунктир) */
 :root.unix-theme .hrq-item:hover > .hrq-card > .hrq-mini, :root.unix-theme .hrq-card.hrq-on > .hrq-mini {
   border: 1px solid; border-color: inherit; border-style: inherit; border-radius: var(--radius); box-shadow: none; }
-/* выбранная сессия в списке — инверсией, как курсор выбора в терминальном меню: блок цвета внимания темы, как счётчик «Ждут вас» и метки (владелец 10.11), всё внутри — цветом фона
-   (владелец 09.11: вместо плашки с рамкой). Значки-картинки темы — тоже цветом фона (почти чёрным) */
+/* выбранная сессия в списке — без инверсии (выбор владельца 10.11, q958657): плашка --muted, полоса слева и имя цветом внимания темы.
+   Инверсия всей строки в «Ждут вас» (до 6 строк пояснения) выходила «шкафом» */
 :root.unix-theme .srow[aria-current="true"], :root.unix-theme .srow.blocked[aria-current="true"] {
-  background: var(--calm-attn); color: var(--background); box-shadow: none; border-radius: 0; }
-/* метка «ждёт вас» в выбранной строке — обратной инверсией, иначе сливается с блоком того же цвета */
-:root.unix-theme .srow[aria-current="true"] .tag { background: var(--background); color: var(--calm-attn); }
-:root.unix-theme .srow[aria-current="true"] *:not(.tag, .tag *) { color: var(--background); }
-/* кнопка исполнителей «3 ▸» справа на строке — контуром цвета фона поверх блока */
-:root.unix-theme li:has(> .srow[aria-current="true"]) > .fork-toggle { background: transparent; color: var(--background);
-  border-color: var(--background); box-shadow: none; }
-:root.unix-theme li:has(> .srow[aria-current="true"]) > .fork-toggle .fdot { background: var(--background); }
-:root.unix-theme .srow[aria-current="true"] .kit-img { filter: brightness(0); }
-/* «ждёт вас» у выбранной: полоса слева — цветом фона (цвет внимания на блоке цвета текста не читается) */
-:root.unix-theme .srow.blocked[aria-current="true"]::before { background: var(--background); }
-/* рамка фокуса (:focus-visible ядра — 2px с отступом) вокруг выбранной строки не нужна: выбор и так виден инверсией.
+  background: var(--muted); box-shadow: inset 2px 0 0 var(--calm-attn); border-radius: 0; }
+:root.unix-theme .srow[aria-current="true"] .nm { color: var(--calm-attn); }
+:root.unix-theme .srow.blocked[aria-current="true"]::before { display: none; }
+/* рамка фокуса (:focus-visible ядра — 2px с отступом) вокруг выбранной строки не нужна: выбор и так виден плашкой с полосой.
    У остальных строк фокус с клавиатуры — тонкой рамкой по краю строки, без отступа и скруглений */
 :root.unix-theme .srow[aria-current="true"]:focus-visible { outline: 0; }
 :root.unix-theme .srow:not([aria-current="true"]):focus-visible { outline: 1px solid var(--foreground); outline-offset: -1px; border-radius: 0; }
