@@ -4,6 +4,7 @@
  "font": "f/hub-term-emoji.ttf",
  "font_scope": "all",
  "font_scale": 1.125,
+ "measure": "110ch",
  "colors": {
   "background": "#1d2021",
   "foreground": "#d5c4a1",
